@@ -1,5 +1,5 @@
 import sys
-from game import game
+from game import menu
 
 # check python version requirement
 min_ver = (3, 7)
@@ -16,9 +16,8 @@ except:
     )
 
 try:
-    from game import game
+    from menu import Menu
 except:
     sys.exit(
         'Your installation is corrupt'
     )
-game.Game()

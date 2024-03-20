@@ -132,7 +132,7 @@ class Game(DirectObject):
         self.world.attachRigidBody(bodyNP.node())
 
         # Ball
-        visNP = loader.loadModel('models/sphere-highpoly.egg')
+        visNP = loader.loadModel('game/models/sphere-highpoly.egg')
         minLimit, maxLimit = visNP.getTightBounds()
         dimensions = Point3(maxLimit - minLimit)
         compList = [dimensions.getX(), dimensions.getY(), dimensions.getZ()]
